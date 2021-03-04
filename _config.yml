@@ -23,7 +23,7 @@ description              : "A developer at ThoughtWorks, focusing on back-end an
 url                      :  "https://chrismaze.github.io"
 baseurl                  : # "/blog"
 repository               : "ChrisMaze/chrismaze.github.io"
-teaser                   : "/assets/images/sunrise.jpg"
+teaser                   : "/assets/images/sunrise.png"
 logo                     : "/assets/images/logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true  # true, false (default)
