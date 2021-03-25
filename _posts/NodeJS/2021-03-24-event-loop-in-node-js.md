@@ -5,8 +5,6 @@ date:   2021-03-24 01:47:10 +0800
 tags:
   - nodejs
   - Backend
-header:
-  image: "./assets/images/sunrise.png"
 ---
 
 TBC

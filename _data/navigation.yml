@@ -1,3 +1,5 @@
 main:
   - title: NodeJS
     url: /nodejs/
+  - title: DesignPattern
+    url: /design-pattern/
