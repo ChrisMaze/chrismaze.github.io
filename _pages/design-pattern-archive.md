@@ -3,6 +3,6 @@ title: Design Pattern
 layout: tag
 permalink: /design-pattern/
 taxonomy: design-pattern
-entries_layout: grid
+entries_layout: list
 author_profile: true
 ---
