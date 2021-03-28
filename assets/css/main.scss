@@ -17,6 +17,9 @@ $type-size-8 : 0.625em;  // ~10px
 
 .page__inner-wrap {
     font-size: $type-size-6;
+    blockquote {
+        font-style: normal;
+    }
     .sidebar__right {
         font-size: $type-size-3;
     };
