@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Singleton Design Pattern"
-date:   2021-03-28 11:35:10 +0800
+date:   2021-04-12 00:35:10 +0800
 toc: true
 tags:
   - design-pattern
