@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Zerong Ma"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/face.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A developer at ThoughtWorks, focusing on back-end and DevOps skills"
   location         : "Xi'an, China"
   email            : "chdmazr@126.com"
