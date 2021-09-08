@@ -14,6 +14,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+github: [metadata]
 locale                   : "zh-CN"
 title                    : "Normal Person Learning-Log"
 title_separator          : "-"
@@ -95,7 +96,7 @@ analytics:
 author:
   name             : "Zerong Ma"
   avatar           : "/assets/images/face.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A developer at ThoughtWorks, focusing on back-end and DevOps skills"
+  bio              : "A developer at thoughtworks, focusing on back-end and DevOps skills"
   location         : "Xi'an, China"
   email            : "chdmazr@126.com"
   links:
