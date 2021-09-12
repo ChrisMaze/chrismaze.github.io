@@ -6,7 +6,7 @@ tags:
   - nodejs
   - Backend
 ---
-# NodeJS Event Loop  
+
 
 使用node.js已经有一段时间了，平时虽然对NODE.JS EVENT LOOP有一定的了解，但没有系统性的总结过。  今天我们简单聊一聊。  
 ## NodeJS Syetem
