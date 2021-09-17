@@ -14,19 +14,18 @@ tags:
 手动删除是不可能手动的了，这辈子都不可能的， 写脚本吧。  
 
 ### Script  
+```
+#!/bin/bash -e  
 
-```shell script  
-#!/bin/bash -e 
+path=${1:unknow}  
 
-path=${1:unknow}
+files=$(find $path -name "node_modules" -type d -prune)  
 
-files=$(find $path -name "node_modules" -type d -prune)
-
-for i in $files
-do
-  echo $i
-  rm -rf $i
-done  
+for i in $files  
+do  
+  echo $i  
+  rm -rf $i  
+done    
 ```
 
 - Find Files by Type
