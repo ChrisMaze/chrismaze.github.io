@@ -17,7 +17,7 @@ tags:
 ```
 #!/bin/bash -e  
 
-path=${1:.}  
+path=${1:-.}  
 
 files=$(find $path -name "node_modules" -type d -prune)  
 
