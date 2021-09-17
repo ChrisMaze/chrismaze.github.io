@@ -14,7 +14,8 @@ tags:
 手动删除是不可能手动的了，这辈子都不可能的， 写脚本吧。  
 
 ### Script
-```shell script
+```shell script  
+
 #!/bin/bash -e 
 
 path=${1:unknow}
