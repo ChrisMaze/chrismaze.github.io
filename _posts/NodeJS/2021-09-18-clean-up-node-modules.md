@@ -17,17 +17,12 @@ tags:
 ```
 #!/bin/bash -e  
 
-path=${1:-.}  
+path=${1:-.}
 
-files=$(find $path -name "node_modules" -type d -prune)  
-
-for i in $files  
-do  
-  echo $i  
-  rm -rf $i  
-done    
+find $path -name "node_modules" -type d -prune -exec rm -rf '{}' +
 ```
 
+几个参数的用法，大家也可以直接  `man find`
 - Find Files by Type
 Sometimes you might need to search for specific file types such as regular files, directories, or symlinks. In Linux, everything is a file.
 To search for files based on their type, use the -type option and one of the following descriptors to specify the file type:
@@ -47,5 +42,18 @@ From here, it traverses through all the files in the entire tree and prints thos
 Hence, when find starts with the current directory, prune does not allow it to descend the current directory since it itself is a directory,   
 and hence only the current directory gets printed, not the files within the directory.   
 The print happens here because it is the default functionality of find to print anything which is true. 
+
+- exec:  
+    - -exec utility [argument ...] ;  
+True if the program named utility returns a zero value as its exit status.  
+Optional arguments may be passed to the utility.  
+The expression must be terminated by a semicolon (;).    
+If you invoke find from a shell you may need to quote the semicolon if the shell would otherwise treat it as a control operator.  
+If the string {} appears anywhere in the utility name or the arguments it is replaced by the pathname of the current file.  
+Utility will be executed from the directory from which find was executed.  
+Utility and arguments are not subject to the further expansion of shell patterns and constructs.  
+    - -exec utility [argument ...] {} +  
+Same as -exec, except that {} is replaced with as many pathnames as possible for each invocation of utility.  
+This behaviour is similar to that of xargs(1).
 
 删完之后，世界变得辽阔，神清气爽！
