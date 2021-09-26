@@ -10,11 +10,11 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-github: [metadata]
+github                   : [metadata]
 locale                   : "zh-CN"
 title                    : "Normal Person Learning-Log"
 title_separator          : "-"
@@ -30,22 +30,22 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true  # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : disqus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    shortname            : Normal Person # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+#  discourse:
+#    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+#  facebook:
+#    # https://developers.facebook.com/docs/plugins/comments
+#    appid                :
+#    num_posts            : # 5 (default)
+#    colorscheme          : # "light" (default), "dark"
+#  utterances:
+#    theme                : # "github-light" (default), "github-dark"
+#    issue_term           : # "pathname" (default)
+#  staticman:
+#    branch               : # "master"
+#    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
@@ -274,10 +274,10 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: layouts
+      comments:  true
       author_profile: true
       read_time: false
-      comments:  false
       share: true
       related: false
       show_data: true
